@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #86a8e7, #91eae4); /* 繽紛背景 */
+    color: #333;
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.score span, .high-score span {
+    color: #e74c3c;
+}
+
+canvas {
+    border: 5px solid #4CAF50;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#gameOverMessage {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+#gameOverMessage button {
+    background-color: #28a745;
+    margin-top: 15px;
+}
+
+#gameOverMessage button:hover {
+    background-color: #218838;
+}
+
+.hidden {
+    display: none;
+}
